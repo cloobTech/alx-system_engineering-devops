@@ -25,4 +25,4 @@
 
 11-directories_permissions: set executable permissions for all sub directories
 
-
+12-directory_permissions: create a directory and set it permission mode to 751
