@@ -16,3 +16,5 @@
 6-multiple_permissions: add executable permissions to owner and group. read permission for others.
 
 7-everybody: add exexcutable permission for all users
+
+8-James_Bond: no permissions for users & groups - all permssion for others
