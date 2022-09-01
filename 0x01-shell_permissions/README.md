@@ -22,3 +22,7 @@
 9-John_Doe: set file permission to '-rwxr-x-wx'
 
 10-mirror_permissions: copy another files permissions
+
+11-directories_permissions: set executable permissions for all sub directories
+
+
