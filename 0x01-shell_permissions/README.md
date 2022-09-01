@@ -30,3 +30,5 @@
 13-change_group: change group owner
 
 100-change_owner_and_group: simultaneously change owner and group owners for all files and directories
+
+101-symbolic_link_permissions: change owner and group owner of a sym link
