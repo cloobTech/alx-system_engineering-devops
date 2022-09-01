@@ -14,3 +14,5 @@
 5-execute: add executable permission to the owner of a file
 
 6-multiple_permissions: add executable permissions to owner and group. read permission for others.
+
+7-everybody: add exexcutable permission for all users
