@@ -11,4 +11,6 @@
 
 4-empty: create an empty file
 
-5-execute: add executable permission to a user
+5-execute: add executable permission to the owner of a file
+
+6-multiple_permissions: add executable permissions to owner and group. read permission for others.
