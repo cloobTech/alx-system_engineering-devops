@@ -28,3 +28,5 @@
 12-directory_permissions: create a directory and set it permission mode to 751
 
 13-change_group: change group owner
+
+100-change_owner_and_group: simultaneously change owner and group owners for all files and directories
