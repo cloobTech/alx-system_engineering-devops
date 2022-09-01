@@ -20,3 +20,5 @@
 8-James_Bond: no permissions for users & groups - all permssion for others
 
 9-John_Doe: set file permission to '-rwxr-x-wx'
+
+10-mirror_permissions: copy another files permissions
