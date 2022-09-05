@@ -21,3 +21,6 @@
 10-no_more_js: Delete all files with '.js' extension
 
 11-directories:  A script that counts the number of directories and sub-directories in the current directory.
+
+12-newest_files: a script that displays the 10 newest files in the current directory.
+
