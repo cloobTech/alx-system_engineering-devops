@@ -13,3 +13,5 @@
 5-firstlines: diaplay first 10 lines of a file
 
 6-third_line: displays the third line of the file
+
+8-cwd_state: write the output of a file into another file (overwrite if possible)
