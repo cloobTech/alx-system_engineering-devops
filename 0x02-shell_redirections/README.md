@@ -11,3 +11,5 @@
 4-lastlines: display last 10 lines of a file
 
 5-firstlines: diaplay first 10 lines of a file
+
+6-third_line: displays the third line of the file
