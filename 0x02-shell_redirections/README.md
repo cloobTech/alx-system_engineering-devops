@@ -15,3 +15,5 @@
 6-third_line: displays the third line of the file
 
 8-cwd_state: write the output of a file into another file (overwrite if possible)
+
+9-duplicate_last_line: duplicate and append last line
