@@ -17,3 +17,5 @@
 8-cwd_state: write the output of a file into another file (overwrite if possible)
 
 9-duplicate_last_line: duplicate and append last line
+
+10-no_more_js: Delete all files with '.js' extension
