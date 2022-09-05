@@ -44,4 +44,4 @@
 
 22-users_and_homes: Write a script that displays all users and their home directories, sorted by users.
 
-
+7-file: Write a shell script that creates a file named exactly \*\\'"Best School"\'\\*$\?\*\*\*\*\*:) containing the text Best School ending by a new line.
