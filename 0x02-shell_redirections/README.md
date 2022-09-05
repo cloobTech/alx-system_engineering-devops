@@ -14,6 +14,10 @@
 
 6-third_line: displays the third line of the file
 
+7-file: Write a shell script that creates a file named exactly \
+*\\'"Best School"\'\\*$\?\*\*\*\*\*:) containing the text Best S
+chool ending by a new line.
+
 8-cwd_state: write the output of a file into another file (overwrite if possible)
 
 9-duplicate_last_line: duplicate and append last line
@@ -45,3 +49,11 @@
 22-users_and_homes: Write a script that displays all users and their home directories, sorted by users.
 
 7-file: Write a shell script that creates a file named exactly \*\\'"Best School"\'\\*$\?\*\*\*\*\*:) containing the text Best School ending by a new line.
+
+100-empty_casks:  a command that finds all empty files and directories in the current directory and all sub-directories.
+
+Only the names of the files and directories should be displayed (not the entire path)
+Hidden files should be listed
+One file name per line
+The listing should end with a new line
+You are not allowed to use basename, grep, egrep, fgrep or rgrep
