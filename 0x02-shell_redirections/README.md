@@ -9,3 +9,5 @@
 3-twofiles: display contents of two  or multiple files
 
 4-lastlines: display last 10 lines of a file
+
+5-firstlines: diaplay first 10 lines of a file
