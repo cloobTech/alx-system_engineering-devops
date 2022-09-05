@@ -19,3 +19,5 @@
 9-duplicate_last_line: duplicate and append last line
 
 10-no_more_js: Delete all files with '.js' extension
+
+11-directories:  A script that counts the number of directories and sub-directories in the current directory.
