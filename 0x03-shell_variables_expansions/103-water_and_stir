@@ -1,4 +1,2 @@
 #!/bin/bash
-export WATER="ewwatratewa"
-export STIR="ti.itirtrtr"
 printf "%bestchol\n" $(($((water#WATER)) + $((stir#STIR))))
