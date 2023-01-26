@@ -2,7 +2,7 @@
 # This script is displaying "Best School" 10 times. On the 9th time add "Hi"
 
 i=0
-until [ $i == 10 ]
+while (( i < 10 ))
 do
 	echo "Best School"
 	if [ $i == 8 ]; then
