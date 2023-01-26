@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
-# This script is displaying "Best School" 10 times
+# This script is displaying "Best School" 10 times. On the 9th time add "Hi"
 
 i=0
 until [ $i == 10 ]
 do
-	if [ $i == 9 ]; then
+	echo "Best School"
+	if [ $i == 8 ]; then
 		echo "Hi"
 	fi
-	echo "Best School"
 	((i++))
 done
