@@ -7,9 +7,9 @@
 
 while IFS= read -r line;
 do
-   user_name=$(echo $line | cut -d: -f1)
-   user_id=$(echo $line | cut -d: -f3)
-   home_dir=$(echo $line | cut -d: -f6)
+   user_name=$(echo "$line" | cut -d: -f1)
+   user_id=$(echo "$line" | cut -d: -f3)
+   home_dir=$(echo "$line" | cut -d: -f6)
 
 	echo "$user_name:$user_id:$home_dir"
 done <  /etc/passwd
