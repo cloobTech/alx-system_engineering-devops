@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# Bash script that displays the content of the file /etc/passwd
+# Your script should only display:
+# username
+#user id
+# Home directory path for the user
+
+while IFS= read -r line;
+do
+   user_name=$(echo "$line" | cut -d: -f1)
+   user_pwd=$(echo "$line" | cut -d: -f2)
+   user_id=$(echo "$line" | cut -d: -f3)
+   gang_id=$(echo "$line" | cut -d: -f4)
+   user_info=$(echo "$line" | cut -d: -f5)
+   home_dir=$(echo "$line" | cut -d: -f6)
+   cmd_shell=$(echo "$line" | cut -d: -f7)
+
+	echo "The user $user_name is part of the $gang_id gang, lives in $home_dir and rides $cmd_shell. $user_id's place is protected by the passcode $user_pwd, more info about the user here: $user_info"
+done <  /etc/passwd
