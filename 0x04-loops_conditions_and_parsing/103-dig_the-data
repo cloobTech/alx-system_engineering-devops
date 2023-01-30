@@ -1,11 +1,8 @@
 #!/usr/bin/env bash
-# Group visitors by IP and HTTP status code
-# Count the number of occurrences of each combination
+# Parses Apache log files in list format.
+#   Groups visitors by IP and HTTP status code.
+#   Displays the number of occurrences, IP, and HTTP status
+#+  code of each log, in sorted order.
 
-grouped_data=$(awk '{print $1 " " $9}' apache-access.log | sort | uniq -c)
+awk '{ print $1 " " $9}' apache-access.log | sort | uniq -c | sort -rn
 
-# Sort the data in descending order by the number of occurrences
-sorted_data=$(echo "$grouped_data" | sort -nr)
-
-# Display the results in the desired format
-echo "$sorted_data" | awk '{print $1 " " $2 " " $3}'
