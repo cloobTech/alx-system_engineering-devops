@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# displays a list of currently running processes
+
+#!/bin/bash
+
+while read -r line; do
+    if [[ $line =~ bash ]]; then
+        pid=$(echo $line | awk '{print $1}')
+        process_name=$(echo $line | awk '{print $4}')
+        if [[ $process_name == "bash" ]]; then
+            echo "$pid $process_name"
+        fi
+    fi
+done < <(pgrep -fl bash)
