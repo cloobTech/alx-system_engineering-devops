@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-
 # Group visitors by IP and HTTP status code
 # Count the number of occurrences of each combination
+
 grouped_data=$(awk '{print $1 " " $9}' apache-access.log | sort | uniq -c)
 
 # Sort the data in descending order by the number of occurrences
