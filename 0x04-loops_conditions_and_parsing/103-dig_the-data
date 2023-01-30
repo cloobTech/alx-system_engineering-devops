@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Group visitors by IP and HTTP status code
 # Count the number of occurrences of each combination
