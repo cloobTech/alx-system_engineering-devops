@@ -1,0 +1,3 @@
+#!/usr/bin/bash
+# login into my remote server
+ssh untu@54.209.138.65
