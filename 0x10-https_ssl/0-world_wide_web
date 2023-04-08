@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+# configuring our domain and sub_domains to point tour servers
+
+
+get_dns_info() {
+  domain=$1
+  subdomain=$2
+
+  if [ -z "$subdomain" ]; then
+    subdomains=("www" "lb-01" "web-01" "web-02")
+  else
+    subdomains=("$subdomain")
+  fi
+
+  for sub in "${subdomains[@]}"; do
+    record_type=$(dig $sub.$domain | grep -A1 'ANSWER SECTION' | awk '{printf $4}')
+    destination=$(dig +short $sub.$domain | awk '{ print $1 }')
+    echo "The subdomain $sub is a $record_type record and points to $destination"
+  done
+}
+
+get_dns_info "$@"
