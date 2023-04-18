@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+# Terminating SSL on HAproxy
+
+
+# Install certbot
+sudo apt-get update
+sudo apt-get install certbot -y
+
+# Request a certificate for the subdomain www.cloob.tech
+sudo certbot certonly --standalone -d www.cloob.tech --non-interactive --agree-tos -m admin@example.com
+
+# Configure HAproxy to terminate SSL and serve traffic for www.cloob.tech
+sudo tee /etc/haproxy/haproxy.cfg > /dev/null << EOF
+frontend https
+    bind *:443 ssl crt /etc/letsencrypt/live/www.cloob.tech/fullchain.pem
+    mode http
+    default_backend web_servers
+
+backend web_servers
+    mode http
+    balance roundrobin
+    option forwardfor
+    server web01 10.0.0.1:80 check
+EOF
+
+# Restart HAproxy
+sudo service haproxy restart
