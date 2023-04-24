@@ -22,7 +22,7 @@ if __name__ == '__main__':
         for task in tasks:
             if task.get('userId') == employee_id:
                 csvfile.write('"{}","{}","{}","{}"\n'.format(
-                            employee_id,
+                            task.get('userId'),
                             EMPLOYEE_NAME,
                             task.get("completed"),
                             task.get("title"))
