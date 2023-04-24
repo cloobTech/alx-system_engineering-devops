@@ -19,7 +19,11 @@ if __name__ == '__main__':
 
     for task in tasks:
         if task.get('userId') == employee_id:
-            task_data.append(task)
+            task_data.append({
+                    'task': task.get('title'),
+                    'completed': task.get('completed'),
+                    'username': EMPLOYEE_NAME,
+                    })
 
     json_data = {str(employee_id): task_data}
     output_file = '{}.json'.format(employee_id)
